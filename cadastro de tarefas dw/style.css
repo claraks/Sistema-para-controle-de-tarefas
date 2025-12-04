@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #7ab1e8;
+    color: #5d5c5c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+h1 {
+    color: #fffdfd;
+    margin-bottom: 30px;
+    text-align: center; 
+    font-size: 32px;
+    width: 100%; 
+}
+
+.container, .form-container {
+    background: #b1cfea;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    padding: 25px;
+    width: 90%;
+    max-width: 750px;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    background: #f9fbfd; 
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e1e7ef;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d9e6;
+    font-size: 14px;
+}
+
+.botao {
+    padding: 12px 22px;
+    background: #7ea3f0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+}
+
+.botao-centralizado {
+    display: flex;
+    justify-content: center; 
+    margin: 30px 0; 
+}
+
+.botao:hover,
+.botao:focus {
+    background: #2d66d1;
+}
+
+.voltar {
+    background: #777;
+}
+
+.voltar:hover,
+.voltar:focus {
+    background: #555;
+}
+
+.botoes-final {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #333;
+    font-size: 14px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e1e7ef;
+}
+
+table th {
+    background-color: #f9fbfd;
+    font-weight: 600;
+}
+
+.urgente {
+    color: red;
+    font-weight: bold;
+}
+
+.erro-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container, .form-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    .botao {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+
