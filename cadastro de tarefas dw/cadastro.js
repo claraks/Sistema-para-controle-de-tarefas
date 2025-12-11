@@ -43,3 +43,4 @@ document.getElementById("formTarefa").addEventListener("submit", async (e) => {
         console.error(erro);
     }
 });
+
